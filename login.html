@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Vastraa</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-va-cream">
+
+<nav class="navbar navbar-expand va-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">VASTRAA<span>.</span></a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">&#8592; Back to Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="va-auth-page py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+        <div class="row g-0 shadow-lg" style="border-radius:16px;overflow:hidden;">
+
+          <div class="col-md-5 va-auth-brand-panel d-none d-md-flex">
+            <div>
+              <div style="font-size:2.2rem;font-weight:800;letter-spacing:0.08em;margin-bottom:0.5rem;">VASTRAA<span style="color:#E6A84A;">.</span></div>
+              <h2 class="mb-3">Welcome<br>back!</h2>
+              <p class="mb-4">Sign in to access your orders, wishlist, and exclusive member offers.</p>
+              <div style="border-top:1px solid rgba(255,255,255,0.2);padding-top:1.5rem;margin-top:1rem;">
+                <div class="small mb-2" style="color:rgba(255,255,255,0.7);">New to Vastraa?</div>
+                <a href="register.html" class="btn btn-va-accent btn-sm px-4">Create Account</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7 bg-white p-4 p-md-5">
+            <h3 class="fw-bold mb-1">Sign In</h3>
+            <p class="text-va-muted small mb-4">Enter your credentials to continue</p>
+
+            <form class="was-validated" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  value="priya@example.com"
+                  required
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                >
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="password" class="form-label">Password</label>
+                  <a href="#" class="small text-va-primary">Forgot Password?</a>
+                </div>
+                <input
+                  type="password"
+                  class="form-control is-invalid"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                  minlength="8"
+                >
+                <div class="invalid-feedback">Password must be at least 8 characters.</div>
+              </div>
+
+              <div class="mb-4 d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="rememberMe" checked>
+                  <label class="form-check-label small" for="rememberMe">Keep me signed in</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-va-primary w-100 py-2 mb-3" style="font-size:1rem;">
+                Sign In
+              </button>
+
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <hr class="flex-fill" style="border-color:var(--va-border)">
+                <span class="small text-va-muted">or continue with</span>
+                <hr class="flex-fill" style="border-color:var(--va-border)">
+              </div>
+
+              <div class="row g-2 mb-4">
+                <div class="col-6">
+                  <button type="button" class="btn w-100 btn-sm fw-semibold" style="border:1.5px solid var(--va-border);color:var(--va-text)">
+                    G &nbsp; Google
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn w-100 btn-sm fw-semibold" style="border:1.5px solid var(--va-border);color:var(--va-text)">
+                    &#128241; &nbsp; Phone OTP
+                  </button>
+                </div>
+              </div>
+
+              <p class="text-center small text-va-muted mb-0">
+                New to Vastraa? <a href="register.html" class="fw-bold">Create an account</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="va-footer pt-4 pb-3">
+  <div class="container">
+    <div class="va-footer-bottom py-2 text-center">
+      <span>&copy; Vastraa. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Vastraa</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-va-cream">
+
+<nav class="navbar navbar-expand va-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">VASTRAA<span>.</span></a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">&#8592; Back to Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="va-auth-page py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-9">
+        <div class="row g-0 shadow-lg" style="border-radius:16px;overflow:hidden;">
+
+          <div class="col-md-4 va-auth-brand-panel d-none d-md-flex" style="min-height:auto;">
+            <div>
+              <div style="font-size:2.2rem;font-weight:800;letter-spacing:0.08em;margin-bottom:0.5rem;">VASTRAA<span style="color:#E6A84A;">.</span></div>
+              <h2 class="mb-3">Join the Vastraa Family</h2>
+              <p class="mb-4">Create an account and enjoy member perks, exclusive deals, and easy order tracking.</p>
+              <ul class="list-unstyled" style="font-size:0.88rem;color:rgba(255,255,255,0.8);">
+                <li class="mb-2">&#10003; &nbsp;Early access to sales</li>
+                <li class="mb-2">&#10003; &nbsp;Track orders easily</li>
+                <li class="mb-2">&#10003; &nbsp;Save your wishlist</li>
+                <li>&#10003; &nbsp;Earn Vastraa rewards</li>
+              </ul>
+              <div style="border-top:1px solid rgba(255,255,255,0.2);padding-top:1.5rem;margin-top:1.5rem;">
+                <div class="small mb-2" style="color:rgba(255,255,255,0.7);">Already a member?</div>
+                <a href="login.html" class="btn btn-va-accent btn-sm px-4">Sign In</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 bg-white p-4 p-md-5">
+            <h3 class="fw-bold mb-1">Create Account</h3>
+            <p class="text-va-muted small mb-4">Fill in your details to get started</p>
+
+            <form novalidate>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control is-valid" id="firstName" placeholder="First Name" value="Priya">
+                    <label for="firstName">First Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control is-valid" id="lastName" placeholder="Last Name" value="Malhotra">
+                    <label for="lastName">Last Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control is-valid" id="regEmail" placeholder="name@example.com" value="priya@example.com">
+                <label for="regEmail">Email address</label>
+                <div class="valid-feedback">Email is available!</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="phone" placeholder="Mobile Number">
+                <label for="phone">Mobile Number</label>
+                <div class="form-text">We'll send your OTP here. Format: +91 XXXXX XXXXX</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control is-invalid" id="regPassword" placeholder="Password">
+                <label for="regPassword">Password</label>
+                <div class="invalid-feedback">Password must be at least 8 characters with 1 number.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control is-invalid" id="confirmPassword" placeholder="Confirm Password">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="invalid-feedback">Passwords do not match.</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold small">Gender</label>
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gFemale" checked>
+                    <label class="form-check-label" for="gFemale">Female</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gMale">
+                    <label class="form-check-label" for="gMale">Male</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gOther">
+                    <label class="form-check-label" for="gOther">Prefer not to say</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="interests" placeholder="Tell us about your style" style="height:90px"></textarea>
+                <label for="interests">Style Preferences (optional)</label>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <label class="form-check-label small" for="newsletterToggle">🔔Subscribe to style newsletter</label>
+                  <div class="form-check form-switch mb-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="newsletterToggle" checked>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <label class="form-check-label small" for="smsToggle">&#128241; Receive SMS alerts for offers</label>
+                  <div class="form-check form-switch mb-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="smsToggle">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-check-label small" for="whatsappToggle">&#128172; WhatsApp order updates</label>
+                  <div class="form-check form-switch mb-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="whatsappToggle" checked>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input is-invalid" type="checkbox" id="termsCheck">
+                <label class="form-check-label small" for="termsCheck">
+                  I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>
+                </label>
+                <div class="invalid-feedback">You must agree before creating an account.</div>
+              </div>
+
+              <button type="submit" class="btn btn-va-primary w-100 py-2 mb-3" style="font-size:1rem;">
+                Create My Account
+              </button>
+              <p class="text-center small text-va-muted mb-0">
+                Already a member? <a href="login.html" class="fw-bold">Sign in</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="va-footer pt-4 pb-3">
+  <div class="container">
+    <div class="va-footer-bottom py-2 text-center">
+      <span>&copy; Vastraa. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

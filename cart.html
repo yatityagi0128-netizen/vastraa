@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Vastraa</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="va-topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span>Free shipping on orders above &#8377;999 &nbsp;|&nbsp; <strong>VASTRAA10</strong> for 10% off</span>
+    <span><a href="help.html">Help</a> &nbsp;|&nbsp; <a href="login.html">Sign In</a></span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand va-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">VASTRAA<span>.</span></a>
+    <ul class="navbar-nav me-auto ms-4">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">New Arrivals</a></li>
+      <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto gap-1">
+      <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
+      <li class="nav-item"><a class="nav-link btn-cart active" href="cart.html">&#128722; Cart (3)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="va-breadcrumb">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">My Cart</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<section class="section-pad-sm">
+  <div class="container">
+    <h2 class="va-section-heading mb-4">My Cart <span class="fs-6 fw-normal text-va-muted ms-2">(3 items)</span></h2>
+
+    <div class="va-shipping-progress mb-4 p-3" style="background:var(--va-light);border-radius:10px;">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="small fw-semibold text-va-text">&#128666; You're &#8377;101 away from FREE shipping!</span>
+        <span class="small text-va-muted">&#8377;898 / &#8377;999</span>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width:90%"></div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="bg-white border rounded-3 overflow-hidden" style="border-color:var(--va-border)!important">
+          <table class="table va-table mb-0">
+            <thead>
+              <tr>
+                <th style="width:90px">Item</th>
+                <th>Product</th>
+                <th class="text-center">Quantity</th>
+                <th class="text-end">Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="Embroided cotton kurta set.jpg"
+     style="width:72px;height:88px;border-radius:6px;object-fit:cover;">
+                </td>
+                <td>
+                  <div class="fw-semibold small mb-1"><a href="product.html" style="color:var(--va-dark)">Embroidered Cotton Kurta Set</a></div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Brand: Rang Sutra &nbsp;|&nbsp; Size: M</div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Colour: Maroon</div>
+                  <span style="font-size:0.72rem;color:#1E8449;font-weight:600;">In Stock &nbsp;&#9679;&nbsp; Ships in 1–2 days</span>
+                </td>
+                <td class="text-center">
+                  <div class="va-qty-box d-inline-flex">
+                    <button class="va-qty-btn">&#8722;</button>
+                    <span>1</span>
+                    <button class="va-qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end">
+                  <div class="fw-bold">&#8377;1,299</div>
+                  <div class="text-va-muted small" style="text-decoration:line-through">&#8377;2,199</div>
+                </td>
+                <td class="text-center">
+                  <a href="#" class="text-va-muted" style="font-size:1.1rem;" title="Remove">&#10005;</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="Hand block printed cotton dupatta.jpg"
+     style="width:72px;height:88px;border-radius:6px;object-fit:cover;">
+                </td>
+                <td>
+                  <div class="fw-semibold small mb-1"><a href="product.html" style="color:var(--va-dark)">Hand-block Printed Cotton Dupatta</a></div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Brand: Rang Sutra &nbsp;|&nbsp; One Size</div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Colour: Indigo</div>
+                  <span style="font-size:0.72rem;color:#1E8449;font-weight:600;">In Stock</span>
+                </td>
+                <td class="text-center">
+                  <div class="va-qty-box d-inline-flex">
+                    <button class="va-qty-btn">&#8722;</button>
+                    <span>1</span>
+                    <button class="va-qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end">
+                  <div class="fw-bold">&#8377;549</div>
+                  <div class="text-va-muted small" style="text-decoration:line-through">&#8377;899</div>
+                </td>
+                <td class="text-center">
+                  <a href="#" class="text-va-muted" style="font-size:1.1rem;" title="Remove">&#10005;</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="anarkali suit.jpg"
+     style="width:72px;height:88px;border-radius:6px;object-fit:cover;">
+                </td>
+                  <div class="fw-semibold small mb-1"><a href="product.html" style="color:var(--va-dark)">Floral Printed Anarkali Suit</a></div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Brand: Miraya Ethnic &nbsp;|&nbsp; Size: L</div>
+                  <div class="text-va-muted" style="font-size:0.78rem;">Colour: Green</div>
+                  <span style="font-size:0.72rem;color:#C9882B;font-weight:600;">&#9888; Only 2 left!</span>
+                </td>
+                <td class="text-center">
+                  <div class="va-qty-box d-inline-flex">
+                    <button class="va-qty-btn">&#8722;</button>
+                    <span>1</span>
+                    <button class="va-qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end">
+                  <div class="fw-bold">&#8377;2,199</div>
+                  <div class="text-va-muted small" style="text-decoration:line-through">&#8377;3,499</div>
+                </td>
+                <td class="text-center">
+                  <a href="#" class="text-va-muted" style="font-size:1.1rem;" title="Remove">&#10005;</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 p-3 bg-white border rounded-3" style="border-color:var(--va-border)!important">
+          <div class="fw-bold mb-3" style="font-size:0.95rem;">&#127881; Have a Coupon Code?</div>
+          <div class="d-flex gap-2 flex-wrap">
+            <input type="text" class="form-control" placeholder="Enter coupon code (e.g. VASTRAA10)" style="max-width:280px;">
+            <button class="btn btn-va-primary">Apply</button>
+          </div>
+          <div class="mt-2 d-flex flex-wrap gap-2">
+            <span class="badge py-1 px-2" style="background:var(--va-light);color:var(--va-primary);border:1px dashed var(--va-primary);cursor:pointer;font-size:0.78rem;font-weight:600;">VASTRAA10</span>
+            <span class="badge py-1 px-2" style="background:var(--va-light);color:var(--va-primary);border:1px dashed var(--va-primary);cursor:pointer;font-size:0.78rem;font-weight:600;">FLAT200</span>
+            <span class="badge py-1 px-2" style="background:var(--va-light);color:var(--va-primary);border:1px dashed var(--va-primary);cursor:pointer;font-size:0.78rem;font-weight:600;">FIRST50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="va-order-summary">
+          <h5>Order Summary</h5>
+          <div class="va-order-row"><span class="label">Subtotal (3 items)</span><span>&#8377;4,047</span></div>
+          <div class="va-order-row"><span class="label">Discount</span><span style="color:#1E8449">&#8722; &#8377;2,250</span></div>
+          <div class="va-order-row"><span class="label">Coupon Discount</span><span style="color:#1E8449">&#8722; &#8377;0</span></div>
+          <div class="va-order-row"><span class="label">Delivery Charges</span><span style="color:#C9882B">&#8377;99</span></div>
+          <div class="va-order-row total"><span>Total Payable</span><span>&#8377;1,896</span></div>
+          <div class="small" style="color:#1E8449;font-weight:600;margin-top:0.5rem;">You save &#8377;2,250 on this order!</div>
+          <a href="checkout.html" class="btn btn-va-primary w-100 mt-3 py-2">Proceed to Checkout</a>
+          <a href="shop.html" class="btn btn-va-outline w-100 mt-2">Continue Shopping</a>
+        </div>
+
+        <div class="mt-3 p-3 bg-white border rounded-3 text-center" style="border-color:var(--va-border)!important">
+          <div class="small text-va-muted mb-2">&#128274; Secure Checkout</div>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <span class="small text-va-muted">Visa</span>
+            <span class="small text-va-muted">Mastercard</span>
+            <span class="small text-va-muted">UPI</span>
+            <span class="small text-va-muted">NetBanking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="va-footer pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-3">
+        <div style="font-size:1.6rem;font-weight:800;color:white;letter-spacing:0.1em;margin-bottom:0.75rem;">VASTRAA<span style="color:#E6A84A;">.</span></div>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);">India's finest fashion &amp; lifestyle store.</p>
+      </div>
+      <div class="col-6 col-md-2"><h6>Shop</h6><a href="shop.html">Kurtas</a><a href="shop.html">Sarees</a><a href="shop.html">Lehengas</a></div>
+      <div class="col-6 col-md-2"><h6>Customer</h6><a href="login.html">My Account</a><a href="cart.html">My Orders</a><a href="help.html">Returns</a></div>
+      <div class="col-6 col-md-2"><h6>Company</h6><a href="#">About Us</a><a href="#">Careers</a></div>
+      <div class="col-6 col-md-3">
+        <h6>Stay Connected</h6>
+        <div class="input-group input-group-sm mt-2">
+          <input type="email" class="form-control" placeholder="Your email">
+          <button class="btn btn-va-accent">Go</button>
+        </div>
+      </div>
+    </div>
+    <div class="va-footer-bottom py-3"><span>&copy;Vastraa. All rights reserved.</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

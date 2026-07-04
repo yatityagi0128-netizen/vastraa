@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Vastraa</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="va-topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span>Free shipping on orders above &#8377;999 &nbsp;|&nbsp; Use code <strong>VASTRAA10</strong> for 10% off</span>
+    <span><a href="help.html">Help</a> &nbsp;|&nbsp; <a href="login.html">Sign In</a></span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand va-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">VASTRAA<span>.</span></a>
+    <ul class="navbar-nav me-auto ms-4">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">New Arrivals</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Sale</a></li>
+      <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto gap-1">
+      <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
+      <li class="nav-item"><a class="nav-link btn-cart" href="cart.html">&#128722; Cart (3)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="va-breadcrumb">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">All Products</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="container section-pad-sm">
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="va-filter-card mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="fw-bold" style="color:var(--va-dark)">Filters</span>
+          <a href="shop.html" class="small text-va-primary">Clear All</a>
+        </div>
+
+        <div class="va-filter-title">Category</div>
+        <div class="mb-3">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat1" checked>
+            <label class="form-check-label small" for="cat1">Kurtas &amp; Kurta Sets <span class="text-muted">(248)</span></label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat2">
+            <label class="form-check-label small" for="cat2">Sarees <span class="text-muted">(189)</span></label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat3">
+            <label class="form-check-label small" for="cat3">Lehengas <span class="text-muted">(97)</span></label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat4">
+            <label class="form-check-label small" for="cat4">Anarkali Suits <span class="text-muted">(312)</span></label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat5">
+            <label class="form-check-label small" for="cat5">Sherwanis <span class="text-muted">(54)</span></label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="cat6">
+            <label class="form-check-label small" for="cat6">Palazzo Sets <span class="text-muted">(76)</span></label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat7">
+            <label class="form-check-label small" for="cat7">Dupattas <span class="text-muted">(143)</span></label>
+          </div>
+        </div>
+
+        <div class="va-filter-title">Brand</div>  
+        <div class="mb-3">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="br1" checked>
+            <label class="form-check-label small" for="br1">Rang Sutra</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="br2">
+            <label class="form-check-label small" for="br2">Kanjivaram House</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="br3">
+            <label class="form-check-label small" for="br3">Neelansh Crafts</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="br4">
+            <label class="form-check-label small" for="br4">Miraya Ethnic</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="br5">
+            <label class="form-check-label small" for="br5">Manyavar</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="br6">
+            <label class="form-check-label small" for="br6">Ekaya Banaras</label>
+          </div>
+        </div>
+
+        <div class="va-filter-title">Price Range</div>
+        <div class="mb-3">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="price" id="p1">
+            <label class="form-check-label small" for="p1">Under &#8377;500</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="price" id="p2" checked>
+            <label class="form-check-label small" for="p2">&#8377;500 – &#8377;2,000</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="price" id="p3">
+            <label class="form-check-label small" for="p3">&#8377;2,000 – &#8377;5,000</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="price" id="p4">
+            <label class="form-check-label small" for="p4">&#8377;5,000 – &#8377;15,000</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="price" id="p5">
+            <label class="form-check-label small" for="p5">Above &#8377;15,000</label>
+          </div>
+        </div>
+
+        <div class="va-filter-title">Customer Rating</div>
+        <div class="mb-2">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="r1" checked>
+            <label class="form-check-label small" for="r1"><span style="color:var(--va-accent)">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5 Stars</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="r2" checked>
+            <label class="form-check-label small" for="r2"><span style="color:var(--va-accent)">&#9733;&#9733;&#9733;&#9733;</span>&#9734; 4+ Stars</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="r3">
+            <label class="form-check-label small" for="r3"><span style="color:var(--va-accent)">&#9733;&#9733;&#9733;</span>&#9734;&#9734; 3+ Stars</label>
+          </div>
+        </div>
+
+        <div class="va-filter-title">Discount</div>
+        <div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="d1">
+            <label class="form-check-label small" for="d1">10% and above</label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="checkbox" id="d2" checked>
+            <label class="form-check-label small" for="d2">30% and above</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="d3">
+            <label class="form-check-label small" for="d3">50% and above</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+        <span class="small text-va-muted fw-semibold">Showing <strong>1,119</strong> products</span>
+        <div class="d-flex align-items-center gap-2">
+          <span class="small text-va-muted">Sort by:</span>
+          <select class="form-select form-select-sm" style="width:auto;border-color:var(--va-border)">
+            <option>Popularity</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option selected>Newest First</option>
+            <option>Customer Rating</option>
+            <option>Discount</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/kurta.jpg" alt="Kurta" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-new">New</span>
+                <span style="font-size:1.1rem;font-weight:800;color:rgba(255,255,255,0.5)">KURTA</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Rang Sutra</div>
+                <div class="va-product-name">Embroidered Cotton Kurta Set</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(248)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;1,299</span>
+                  <span class="va-price-original">&#8377;2,199</span>
+                  <span class="va-price-discount">41% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/pure silk saree.jpg" alt="Saree" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-sale">Sale</span>
+                <span style="font-size:1.1rem;font-weight:800;color:rgba(255,255,255,0.5)">SAREE</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Kanjivaram House</div>
+                <div class="va-product-name">Pure Silk Kanjivaram Saree</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(189)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;8,499</span>
+                  <span class="va-price-original">&#8377;12,000</span>
+                  <span class="va-price-discount">29% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/Bridal lehenga with dupatta.jpg" alt="Lehenga" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-new">New</span>
+                <span style="font-size:1.1rem;font-weight:800;color:rgba(255,255,255,0.5)">LEHNGA</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Neelansh Crafts</div>
+                <div class="va-product-name">Bridal Lehenga with Dupatta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="count">(97)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;14,999</span>
+                  <span class="va-price-original">&#8377;22,000</span>
+                  <span class="va-price-discount">32% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/anarkali suit.jpg" alt="Anarkali" style="width:100%;height:100%;object-fit:cover;">
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">ANARKALI</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Miraya Ethnic</div>
+                <div class="va-product-name">Floral Printed Anarkali Suit</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="count">(312)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;2,199</span>
+                  <span class="va-price-original">&#8377;3,499</span>
+                  <span class="va-price-discount">37% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/plazo set with kurta.jpg" alt="Palazzo" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-new">New</span>
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">PALAZZO</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Rustorange</div>
+                <div class="va-product-name">Printed Palazzo Set with Kurta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(76)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;999</span>
+                  <span class="va-price-original">&#8377;1,799</span>
+                  <span class="va-price-discount">44% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/Sherwani with dupatta.jpg" alt="Sherwani" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-new">New</span>
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">SHERWA</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Manyavar</div>
+                <div class="va-product-name">Royal Sherwani with Dupatta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(54)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;6,499</span>
+                  <span class="va-price-original">&#8377;9,999</span>
+                  <span class="va-price-discount">35% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/Hand block printed cotton dupatta.jpg" alt="Dupatta" style="width:100%;height:100%;object-fit:cover;">
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">DUPATTA</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Rang Sutra</div>
+                <div class="va-product-name">Hand-block Printed Cotton Dupatta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="count">(143)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;549</span>
+                  <span class="va-price-original">&#8377;899</span>
+                  <span class="va-price-discount">39% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/Woven banaras jacket kurta.jpg" alt="Jacket" style="width:100%;height:100%;object-fit:cover;">
+                <span class="va-badge-sale">Sale</span>
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">JACKET</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Ekaya Banaras</div>
+                <div class="va-product-name">Woven Banaras Jacket Kurta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(88)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;3,299</span>
+                  <span class="va-price-original">&#8377;4,999</span>
+                  <span class="va-price-discount">34% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4">
+          <a href="product.html" class="text-decoration-none">
+            <div class="va-product-card">
+              <div class="va-product-img position-relative" style="height:300px;">
+    <img src="/assests/Chanderi cotton straight suit.jpg" alt="Kurta" style="width:100%;height:100%;object-fit:cover;">
+                <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.5)">KURTA</span>
+              </div>
+              <div class="va-product-body">
+                <div class="va-product-brand">Miraya Ethnic</div>
+                <div class="va-product-name">Chanderi Cotton Straight Kurta</div>
+                <div class="va-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="count">(195)</span></div>
+                <div class="va-price">
+                  <span class="va-price-current">&#8377;879</span>
+                  <span class="va-price-original">&#8377;1,499</span>
+                  <span class="va-price-discount">41% off</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Product pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><span class="page-link">...</span></li>
+          <li class="page-item"><a class="page-link" href="#">12</a></li>
+          <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<footer class="va-footer pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-3">
+        <div style="font-size:1.6rem;font-weight:800;color:white;letter-spacing:0.1em;margin-bottom:0.75rem;">VASTRAA<span style="color:#E6A84A;">.</span></div>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);">India's finest fashion &amp; lifestyle store.</p>
+      </div>
+      <div class="col-6 col-md-2"><h6>Shop</h6><a href="shop.html">Kurtas</a><a href="shop.html">Sarees</a><a href="shop.html">Lehengas</a></div>
+      <div class="col-6 col-md-2"><h6>Customer</h6><a href="login.html">My Account</a><a href="cart.html">My Orders</a><a href="help.html">Returns</a></div>
+      <div class="col-6 col-md-2"><h6>Company</h6><a href="#">About Us</a><a href="#">Blog</a><a href="#">Careers</a></div>
+      <div class="col-6 col-md-3">
+        <h6>Stay Connected</h6>
+        <div class="input-group input-group-sm mt-2">
+          <input type="email" class="form-control" placeholder="Your email">
+          <button class="btn btn-va-accent">Go</button>
+        </div>
+      </div>
+    </div>
+    <div class="va-footer-bottom py-3">
+      <span>&copy;Vastraa. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
